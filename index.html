@@ -119,12 +119,12 @@
          //calculation function
          function calc(val, subtotal,productId,item_price_Id){
             var totalPrice = val*price;
-            //var tax= 5*subtotal/100;
+            
             var total= subtotal;
             document.getElementById(productId).value = val;
             document.getElementById(item_price_Id).innerText = totalPrice;
             document.getElementById('subtotal').innerText= subtotal;
-            //document.getElementById('tax').innerText= tax;
+            
             document.getElementById('total').innerText= total;
          }
       }
